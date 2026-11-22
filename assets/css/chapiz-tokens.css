@@ -1,0 +1,84 @@
+/* ==========================================================
+   Chapiz brand tokens v1 - 17.11.2026
+   Source of truth for the new chapiz.co.il (WP + Woo).
+   Fonts: Fredoka (display) + Rubik (body), Google Fonts, both with Hebrew.
+   ========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  /* ---- Core: from the logo ---- */
+  --cz-red: #EA4023;        /* logo circle. Big shapes, display headings >= 24px */
+  --cz-red-cta: #D9361E;    /* buttons with white text (AA 4.67) */
+  --cz-red-hover: #C21F27;
+  --cz-tangerine: #F26D3B;  /* logo outer band. Backgrounds with ink text */
+  --cz-ruby: #C21F27;       /* logo tail + waves. Links, deep accents (AA on cream) */
+  --cz-sunset: #F5A32A;     /* logo highlights. Stars, sparkles, badges */
+
+  /* ---- Character palette: one color per model ---- */
+  --cz-dragon: #3DB5E6;       /* Bluedragon */
+  --cz-dragon-deep: #1577A3;  /* text-safe blue (AA on white) */
+  --cz-duck: #F7D02A;         /* Bubblyduck */
+  --cz-captain: #F4A8A8;      /* Captaincheese */
+  --cz-coral: #F06262;        /* tongues, hearts */
+  --cz-panda: #1E1E1E;        /* Cheekypanda */
+  --cz-panda-light: #E6E6E6;
+  --cz-honey: #96603E;        /* Honeybear */
+
+  /* ---- Tints for section backgrounds ---- */
+  --cz-sky-tint: #E3F4FC;
+  --cz-sun-tint: #FFF6CC;
+  --cz-pink-tint: #FDE9E9;
+  --cz-peach-tint: #FFE7DC;
+
+  /* ---- Neutrals (warm, never pure black) ---- */
+  --cz-ink: #2B1A14;        /* body text */
+  --cz-ink-soft: #6A564D;   /* secondary text (AA on cream) */
+  --cz-cream: #FFF7EE;      /* default page background */
+  --cz-paper: #FFFFFF;      /* cards */
+  --cz-sand: #F3E4D3;       /* borders, dividers */
+
+  --cz-whatsapp: #25D366;
+
+  /* ---- Type ---- */
+  --cz-font-display: "Fredoka", "Rubik", Arial, sans-serif;
+  --cz-font-body: "Rubik", Arial, sans-serif;
+  --cz-fs-hero: clamp(2.4rem, 6vw, 4rem);
+  --cz-fs-h2: clamp(1.9rem, 4vw, 2.75rem);
+  --cz-fs-h3: 1.5rem;
+  --cz-fs-lead: 1.2rem;
+  --cz-fs-body: 1.0625rem;
+  --cz-fs-small: 0.9rem;
+
+  /* ---- Shape ---- */
+  --cz-r-sm: 12px;
+  --cz-r-md: 20px;
+  --cz-r-lg: 32px;
+  --cz-r-pill: 999px;
+  --cz-shadow-card: 0 2px 0 rgba(43,26,20,.06), 0 12px 28px -12px rgba(43,26,20,.18);
+  --cz-shadow-pop: 0 6px 0 var(--cz-red-hover);   /* chunky "toy" button shadow */
+
+  /* ---- Spacing (8px grid) ---- */
+  --cz-s1: 8px; --cz-s2: 16px; --cz-s3: 24px; --cz-s4: 32px;
+  --cz-s6: 48px; --cz-s8: 64px; --cz-s12: 96px;
+
+  /* ---- Motion ---- */
+  --cz-ease-bounce: cubic-bezier(.34, 1.56, .64, 1);
+  --cz-dur: 220ms;
+}
+
+/* ---- Base ---- */
+body { background: var(--cz-cream); color: var(--cz-ink); font-family: var(--cz-font-body); font-size: var(--cz-fs-body); line-height: 1.65; }
+h1, h2, h3, .cz-display { font-family: var(--cz-font-display); font-weight: 700; line-height: 1.15; letter-spacing: -.01em; }
+a { color: var(--cz-ruby); }
+
+/* ---- Buttons ---- */
+.cz-btn { display: inline-flex; align-items: center; gap: .5em; font: 600 1.125rem/1 var(--cz-font-display); padding: 18px 32px; border-radius: var(--cz-r-pill); border: 0; cursor: pointer; text-decoration: none; transition: transform var(--cz-dur) var(--cz-ease-bounce), box-shadow var(--cz-dur); }
+.cz-btn--primary { background: var(--cz-red-cta); color: #fff; box-shadow: var(--cz-shadow-pop); }
+.cz-btn--primary:hover { transform: translateY(-2px); box-shadow: 0 8px 0 var(--cz-red-hover); }
+.cz-btn--primary:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--cz-red-hover); }
+.cz-btn--secondary { background: var(--cz-paper); color: var(--cz-ink); box-shadow: inset 0 0 0 3px var(--cz-ink); }
+.cz-btn--whatsapp { background: var(--cz-whatsapp); color: #0B3B1E; }
+.cz-btn:focus-visible { outline: 3px solid var(--cz-dragon-deep); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .cz-btn { transition: none; } }
