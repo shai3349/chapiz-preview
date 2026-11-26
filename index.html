@@ -1,324 +1,851 @@
 <!doctype html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" data-hero="cover">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>תג חכם לכלב | מי שמוצא את הכלב, מוצא אתכם | Chapiz</title>
-<meta name="description" content="תג חכם לכלב: מי שמוצא את הכלב מצמיד טלפון לתג ורואה מיד למי להתקשר. בלי אפליקציה, בלי סוללה ובלי מנוי. 5 דמויות לבחירה.">
-<meta name="robots" content="noindex,nofollow">
+<title>תג חכם לכלב | מי שמוצא את הכלב שלכם, מוצא גם אתכם | Chapiz</title>
+<meta name="description" content="תג חכם לכלב: מי שמוצא את הכלב מצמיד טלפון לתג ורואה מיד איך להשיג אתכם, בלי אפליקציה, בלי מנוי ובלי סוללה.">
+<meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="assets/img/favicon.ico" sizes="any">
 <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<meta name="theme-color" content="#EA4023">
+<meta name="theme-color" content="#FBF7F0">
+<link rel="preload" as="image" href="assets/img/hero-nicolas-poster.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/css/chapiz-tokens.css">
-<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Suez+One&display=swap">
+<link rel="stylesheet" href="assets/css/v3.css">
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search), r = document.documentElement;
+    if (q.has('shot')) r.classList.add('shot');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) r.classList.add('no-motion');
+  })();
+</script>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.6" fill="currentColor"/><circle cx="17" cy="20" r="1.6" fill="currentColor"/></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
-  <symbol id="i-scan" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M19.5 9a4.5 4.5 0 0 1 0 6M21.8 7a7.5 7.5 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
-  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
-  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15L19.5 12z" fill="currentColor"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6.5h11v9H3zM14 9.5h3.6l3.4 3.4v2.6h-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 9h13l-3.5-3.5M20 15H7l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-once" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.3 12.2l2.5 2.5 5-5.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4.5h3.5v15H7zM13.5 4.5H17v15h-3.5z" fill="currentColor"/></symbol>
 </svg>
 
-<div class="announce">2 תגים ומעלה: <b>25% הנחה על כל ההזמנה</b> · משלוחים לכל הארץ</div>
-
-<header class="header">
-  <div class="wrap">
-    <button class="icon-btn burger" aria-label="פתיחת תפריט" type="button"><svg class="icon"><use href="#i-menu"/></svg></button>
-    <a class="logo" href="index.html" aria-label="Chapiz, לעמוד הבית"><img src="assets/img/chapiz-logo.svg" alt="Chapiz" title="Chapiz" width="88" height="50"></a>
+<header class="site-head">
+  <div class="wrap head-row">
+    <button class="icon-btn burger" type="button" aria-label="פתיחת תפריט" title="תפריט"><svg class="icon"><use href="#i-menu"/></svg></button>
+    <a class="logo" href="./" aria-label="Chapiz, לעמוד הבית" title="Chapiz, לעמוד הבית"><img src="assets/img/chapiz-logo.svg" alt="Chapiz" title="Chapiz" width="77" height="44"></a>
     <nav class="nav" aria-label="ניווט ראשי">
-      <a href="#models">הדמויות</a>
-      <a href="#how">איך זה עובד</a>
-      <a href="#privacy">פרטיות</a>
-      <a href="#faq">שאלות</a>
-      <a href="#story">הסיפור שלנו</a>
+      <a href="#models" title="הדמויות">הדמויות</a>
+      <a href="#how" title="איך זה עובד">איך זה עובד</a>
+      <a href="#privacy" title="פרטיות">פרטיות</a>
+      <a href="#faq" title="שאלות נפוצות">שאלות</a>
+      <a href="#story" title="הסיפור שלנו">הסיפור שלנו</a>
     </nav>
-    <div class="h-actions">
-      <a class="icon-btn wa" href="#" aria-label="כתבו לנו בוואטסאפ" title="וואטסאפ"><svg class="icon" style="color:#1C9E4F"><use href="#i-wa"/></svg></a>
-      <a class="icon-btn" href="#" aria-label="עגלת קניות, 0 פריטים" title="עגלה"><svg class="icon"><use href="#i-cart"/></svg><span class="count">0</span></a>
-      <a class="cz-btn cz-btn--primary" href="#models">לבחירת תג</a>
+    <div class="head-actions">
+      <a class="icon-btn wa" href="#" aria-label="כתבו לנו בוואטסאפ" title="כתבו לנו בוואטסאפ"><svg class="icon"><use href="#i-wa"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="עגלת קניות, 0 פריטים" title="עגלת קניות"><svg class="icon"><use href="#i-cart"/></svg><span class="count">0</span></a>
     </div>
   </div>
 </header>
 
 <main>
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <span class="bubble" style="width:260px;height:260px;background:var(--cz-dragon);top:-90px;right:-110px;opacity:.85"></span>
-  <span class="bubble" style="width:90px;height:90px;background:var(--cz-captain);bottom:60px;right:42%"></span>
-  <div class="wrap">
-    <div>
-      <span class="kicker">תג חכם לכלב</span>
-      <h1>מי שמוצא את הכלב שלכם, <span class="hl">מוצא גם אתכם.<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C70 2 150 2 296 9" fill="none" stroke="#F7D02A" stroke-width="7" stroke-linecap="round"/></svg></span></h1>
-      <p class="sub">מצמידים טלפון לתג שעל הקולר, ורואים מיד את הפרטים שלכם. בלי אפליקציה, בלי מנוי ובלי סוללה.</p>
-      <div class="ctas">
-        <a class="cz-btn cz-btn--primary" href="#models">לבחירת הדמות ←</a>
-        <a class="cz-btn cz-btn--secondary" href="#how">איך זה עובד?</a>
-      </div>
-      <div class="price-note"><b>99 ₪</b><s>129 ₪</s><span class="pill">25% הנחה על 2 ומעלה</span></div>
+<section class="hero" id="hero" aria-labelledby="hero-title">
+<div class="hero-in wrap">
+
+  <div class="hero-copy">
+    <div class="hero-top">
+      <p class="kicker">תג חכם לכלב</p>
+      <h1 class="hero-title" id="hero-title"><span>מי שמוצא</span> <span>את הכלב שלכם,</span> <span>מוצא גם אתכם</span></h1>
+      <p class="hero-sub">מצמידים את הטלפון לתג שעל הקולר, והפרטים שלכם עולים על המסך, בלי להוריד אפליקציה, בלי מנוי ובלי סוללה.</p>
     </div>
-    <div class="hero-art">
-      <div class="blob"></div>
-      <div class="main"><img src="assets/img/dog-brindle-duck.webp" alt="כלב מעורב בצבע ברינדל שוכב על הדשא עם תג Bubblyduck צהוב על הקולר" title="כלב עם תג Bubblyduck" width="686" height="817" fetchpriority="high"></div>
-      <div class="mini"><img src="assets/img/dog-pomeranian-captain.webp" alt="כלב פומרניאן לבן עם רתמה ורודה ותג Captaincheese" title="פומרניאן עם תג Captaincheese" width="703" height="844"></div>
-      <img class="float f1" src="assets/img/char-bluedragon.webp" alt="" width="512" height="512">
-      <img class="float f2" src="assets/img/char-cheekypanda.webp" alt="" width="512" height="512">
-      <img class="float f3" src="assets/img/char-honeybear.webp" alt="" width="512" height="512">
-      <div class="scan-chip"><span class="dot"><svg class="icon"><use href="#i-scan"/></svg></span>מצמידים טלפון<br>ורואים פרטים</div>
+
+    <div class="hero-buy">
+      <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+      <p class="price">
+        <span class="price-row">
+          <span class="now">99 <span class="cur">₪</span></span>
+          <s><span class="sr-only">במקום </span>129 ₪</s>
+        </span>
+        <span class="deal">25% הנחה על 2 תגים ומעלה, ומשלוח לכל הארץ</span>
+      </p>
+      <a class="how" href="#how" title="ככה זה עובד, בסרטון של חצי דקה">
+        <span class="disc" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+        <span class="t">ככה זה עובד, בסרטון של חצי דקה</span>
+      </a>
     </div>
   </div>
+
+  <figure class="hero-film">
+    <div class="film">
+      <video id="film" muted loop playsinline preload="none" width="720" height="1280"
+        poster="assets/img/hero-nicolas-poster.webp"
+        data-src="assets/video/hero-nicolas.mp4"
+        data-src-wide="assets/video/hero-nicolas-wide.mp4" data-poster-wide="assets/img/hero-nicolas-wide-poster.webp"
+        aria-label="ניקולאס, רועה גרמני, שוכב על הדשא בפארק ומתנשף, ועל הקולר שלו תג צ'אפיז צהוב"></video>
+      <button class="film-toggle" id="film-toggle" type="button" aria-pressed="false" aria-label="עצירת הסרטון" title="עצירת הסרטון">
+        <svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        <svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg>
+      </button>
+    </div>
+    <figcaption>
+      <img src="assets/img/char-bubblyduck.webp" alt="תג Bubblyduck" title="Bubblyduck" width="505" height="505" loading="lazy">
+      <span><b>ניקולאס</b>, רועה גרמני. התג שלו: <bdi>Bubblyduck</bdi></span>
+    </figcaption>
+  </figure>
+
+</div>
 </section>
 
-<div class="trust-wrap"><div class="trust" aria-label="יתרונות">
-  <div class="track">
-    <span>עמיד במים</span><span>בלי סוללה</span><span>בלי מנוי</span><span>מתאים לכל קולר</span><span>הפעלה ב-3 דקות</span><span>מעדכנים פרטים בכל רגע</span>
-    <span aria-hidden="true">עמיד במים</span><span aria-hidden="true">בלי סוללה</span><span aria-hidden="true">בלי מנוי</span><span aria-hidden="true">מתאים לכל קולר</span><span aria-hidden="true">הפעלה ב-3 דקות</span><span aria-hidden="true">מעדכנים פרטים בכל רגע</span>
-  </div>
-</div></div>
+<!-- ============ 2. Why a tag (paper) ============
+     ACF (home > why): kicker · title · lede · run_mp4, run_poster · still_image
+     caption: dog_name, dog_desc, tag (product) · compare_title
+     compare_rows (repeater: label, text, is_us) · cta (link) · more_link (page) -->
+<section class="blk why" id="why" aria-labelledby="why-title">
+<div class="wrap why-grid">
 
-<!-- ================= WHY ================= -->
-<section class="why" id="why">
-  <div class="wrap">
-    <div class="why-head">
-      <div>
-        <span class="kicker">למה תעודת זהות?</span>
-        <h2>הכלב לא יכול להגיד למי הוא שייך. התג כן.</h2>
-      </div>
-      <p class="why-quote">כמו שלכל אחד מאיתנו יש תעודת זהות, גם לכלב מגיעה אחת. כזאת שכל אחד ברחוב יודע לקרוא.</p>
+  <header class="why-head">
+    <p class="kicker">למה צריך תג</p>
+    <h2 class="h2" id="why-title"><span class="nw">הכלב לא יכול לספר</span> <span class="nw">למי הוא שייך,</span> <span class="nw">אז התג מספר בשבילו</span></h2>
+  </header>
+
+  <figure class="why-media">
+    <div class="ph why-run">
+      <video class="lazy-film" muted loop playsinline preload="none" width="720" height="1280"
+        poster="assets/img/why-run-poster.webp" data-src="assets/video/why-run.mp4"
+        aria-label="ניקולאס רץ על הדשא בפארק באור שקיעה"></video>
+      <button class="film-toggle" type="button" aria-pressed="false" aria-label="עצירת הסרטון" title="עצירת הסרטון">
+        <svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        <svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg>
+      </button>
     </div>
-    <div class="bento">
-      <div class="cmp us">
-        <div>
-          <h3>צ'אפיז</h3>
-          <ul>
-            <li>רואים אותו על הקולר, אז יודעים שיש מה לסרוק</li>
-            <li>כל סמארטפון קורא אותו, בלי להוריד כלום</li>
-            <li>החלפתם מספר? מעדכנים בפרופיל, התג נשאר אותו תג</li>
-            <li>בלי סוללה ובלי מנוי. קונים פעם אחת</li>
-            <li>משתלב עם GPS או איירטאג שכבר יש לכם</li>
-          </ul>
-          <a class="cz-btn" href="#models">לבחירת תג ←</a>
+    <div class="ph why-still">
+      <img src="assets/img/why-nicolas-profile.webp" alt="ניקולאס, רועה גרמני, יושב בפארק בפרופיל, ותג צ'אפיז צהוב תלוי על הקולר שלו" title="ניקולאס בפארק" width="720" height="1280" loading="lazy">
+    </div>
+  </figure>
+
+  <div class="why-body">
+    <p class="lede">מספיק שער שנשאר פתוח או אזעקה באמצע הטיול, וכלב שמכיר כל פינה בשכונה מוצא את עצמו לבד ברחוב. מי שמוצא אותו בדרך כלל רוצה לעזור, ורק לא יודע למי להתקשר. צ'אפיז הוא תעודת זהות שתלויה על הקולר, וכל אחד יכול לקרוא אותה עם הטלפון שכבר יש לו בכיס.</p>
+
+    <div class="compare">
+      <h3 class="compare-t">ומה עם מה שכבר יש לכלב?</h3>
+      <dl>
+        <div class="row">
+          <dt>שבב</dt>
+          <dd>יושב מתחת לעור, ואף אחד ברחוב לא יודע שהוא שם. קוראים אותו רק עם סורק מיוחד אצל וטרינר.</dd>
         </div>
-        <div class="chars" aria-hidden="true"><img src="assets/img/char-bubblyduck.webp" alt=""><img src="assets/img/char-captaincheese.webp" alt=""><img src="assets/img/char-honeybear.webp" alt=""></div>
+        <div class="row">
+          <dt>GPS ואיירטאג</dt>
+          <dd>רק אתם רואים איפה הכלב, ומי שמצא אותו ברחוב לא יודע של מי הוא ואיך להשיג אתכם. בנוסף, יש בהם סוללה שצריך לטעון או להחליף.</dd>
+        </div>
+        <div class="row">
+          <dt>תג חרוט</dt>
+          <dd>החריטה נשחקת עם הזמן, ואם החלפתם מספר טלפון צריך להזמין תג חדש.</dd>
+        </div>
+        <div class="row is-us">
+          <dt><img src="assets/img/char-bubblyduck.webp" alt="" width="505" height="505" loading="lazy">צ'אפיז</dt>
+          <dd>רואים אותו על הקולר, כל סמארטפון קורא אותו בלי להוריד כלום, ואת הפרטים מעדכנים בפרופיל בלי להחליף תג. אין בו סוללה ואין מנוי, והוא משתלב עם ה-GPS שכבר יש לכם.</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="blk-cta">
+      <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+      <a class="more" href="#" data-page="/למה-צאפיז/" title="ההשוואה המלאה: צ'אפיז מול שבב, תג חרוט ו-GPS">ההשוואה המלאה מול שבב ו-GPS <span class="arr" aria-hidden="true">←</span></a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ============ 3. The moment (night) ============
+     ACF (home > moment): kicker · title · lede
+     steps (repeater, 4): title · text · media_type (video|image|screen)
+     media_mp4, media_poster, media_image · caption -->
+<section class="blk blk--night moment" id="how" aria-labelledby="moment-title">
+<div class="wrap">
+
+  <header class="moment-head">
+    <p class="kicker">הרגע שמישהו מוצא אותו</p>
+    <h2 class="h2" id="moment-title">ככה זה נראה כשמישהו מוצא את הכלב שלכם</h2>
+    <p class="lede">מי שמוצא כלב ברחוב בדרך כלל רוצה לעזור, ורק לא יודע למי להתקשר. עם צ'אפיז זה לוקח כמה שניות, וזה נראה בדיוק כך.</p>
+  </header>
+
+  <div class="steps" id="steps">
+
+    <div class="step" data-step="0">
+      <figure class="step-media is-on">
+        <div class="frame frame--screen frame--tag">
+          <img class="tag-front" src="assets/img/char-bluedragon.webp" alt="תג Bluedragon מלפנים" title="Bluedragon מלפנים" width="505" height="505" loading="lazy" draggable="false">
+          <img class="tag-back" src="assets/img/tag-back-cut.webp" alt="הגב של אותו תג: סמל של יד מחזיקה טלפון, גלי סריקה והכיתוב NFC" title="גב התג" width="544" height="715" loading="lazy" draggable="false">
+        </div>
+        <figcaption class="cap"><img src="assets/img/char-bluedragon.webp" alt="" width="505" height="505" loading="lazy"><span><bdi>Bluedragon</bdi> מלפנים ומאחור. הסמל בגב זהה בכל חמש הדמויות</span></figcaption>
+      </figure>
+      <div class="step-text">
+        <h3>רואים את הסמל בגב התג</h3>
+        <p>בגב של כל תג מוטבע סמל של טלפון וגלי סריקה, אז גם מי שמעולם לא שמע על צ'אפיז מבין מיד מה לעשות.</p>
       </div>
-      <div class="cmp"><span class="x" aria-hidden="true">✕</span><h3>שבב</h3><p>נמצא מתחת לעור, ואף אחד ברחוב לא יודע שהוא שם. קוראים אותו רק עם סורק מיוחד אצל וטרינר.</p></div>
-      <div class="cmp"><span class="x" aria-hidden="true">✕</span><h3>תג חרוט</h3><p>החריטה נשחקת עם הזמן. החלפתם מספר טלפון? צריך להזמין תג חדש.</p></div>
-      <div class="cmp"><span class="x" aria-hidden="true">✕</span><h3>GPS ואיירטאג</h3><p>מראים לכם איפה הכלב, אבל רק לכם. מי שמוצא אותו כשאתם בעבודה לא יודע למי להתקשר. בנוסף, צריך לטעון או להחליף סוללה, וה-GPS עלול להשתבש.</p></div>
     </div>
-  </div>
-</section>
 
-<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cz-paper)"><path d="M0,30 C240,66 480,-6 720,30 C960,66 1200,-6 1440,30 L1440,60 L0,60 Z" fill="#E3F4FC"/></svg>
-
-<!-- ================= HOW ================= -->
-<section class="how" id="how">
-  <span class="bubble" style="width:180px;height:180px;background:var(--cz-duck);bottom:-60px;right:-40px"></span>
-  <div class="wrap">
-    <div>
-      <span class="kicker">איך זה עובד</span>
-      <h2>3 דקות, והכלב יודע לספר למי הוא שייך</h2>
-      <p class="lead">בלי חיבור, בלי טעינה ובלי הוראות מסובכות. ומי שמוצא את הכלב לא צריך להוריד שום אפליקציה.</p>
-      <ol class="steps">
-        <li class="step"><div class="num" style="--c:var(--cz-duck)"><img src="assets/img/char-bubblyduck.webp" alt=""></div><div><h3>תולים את התג</h3><p>על כל טבעת של קולר או רתמה. בלי סוללה ובלי טעינה.</p></div></li>
-        <li class="step"><div class="num" style="--c:var(--cz-dragon)">2</div><div><h3>ממלאים פרופיל</h3><p>מצמידים את הטלפון לתג, נרשמים וממלאים את פרטי הכלב, שלכם ושל הווטרינר.</p></div></li>
-        <li class="step"><div class="num" style="--c:var(--cz-captain)">3</div><div><h3>מי שמוצא, מצמיד טלפון</h3><p>רואה את סמל הסריקה בגב התג, מצמיד את הטלפון ומתקשר אליכם.</p></div></li>
-      </ol>
-    </div>
-    <div class="phone">
-      <span class="label">ככה זה נראה ▶</span>
-      <video controls preload="none" playsinline poster="assets/img/how-it-works-poster.jpg" aria-label="סרטון: איך מפעילים את תג צ'אפיז">
-        <source src="assets/video/how-it-works.mp4" type="video/mp4">
-      </video>
-      <img class="tagback" src="assets/img/tag-back.webp" alt="גב התג עם סמל הסריקה, זהה בכל הדגמים" title="גב התג: סמל סריקה" width="823" height="851" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<svg class="wave wave-top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cz-paper)"><path d="M0,30 C240,66 480,-6 720,30 C960,66 1200,-6 1440,30 L1440,60 L0,60 Z" fill="#E3F4FC"/></svg>
-
-<!-- ================= MODELS ================= -->
-<section class="models" id="models">
-  <div class="wrap">
-    <div class="models-head">
-      <div>
-        <span class="kicker">הדמויות</span>
-        <h2>איזה צ'אפיז מתאים לכלב שלכם?</h2>
-        <p class="lead">אותה טכנולוגיה בדיוק, חמישה אופיים שונים. בחרו את מי שהכי מזכיר לכם את הכלב.</p>
+    <div class="step" data-step="1">
+      <figure class="step-media">
+        <div class="frame">
+          <video class="lazy-film" muted loop playsinline preload="none" width="720" height="1280"
+            poster="assets/img/moment-scan-poster.webp" data-src="assets/video/moment-scan.mp4"
+            aria-label="יד מחזיקה את התג שעל הקולר של בורדר קולי, יד שנייה מצמידה אליו טלפון, והפרופיל נפתח על המסך"></video>
+          <button class="film-toggle" type="button" aria-pressed="false" aria-label="עצירת הסרטון" title="עצירת הסרטון">
+            <svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+            <svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg>
+          </button>
+        </div>
+        <figcaption class="cap"><span><b>סריקה אמיתית, במהירות רגילה.</b> הטלפון נוגע בתג שעל הקולר, והפרופיל נפתח על המסך</span></figcaption>
+      </figure>
+      <div class="step-text">
+        <h3>מצמידים את הטלפון</h3>
+        <p>כל סמארטפון מהשנים האחרונות קורא את התג, גם אייפון וגם אנדרואיד. לא צריך להוריד אפליקציה ולא צריך להירשם, מספיק לקרב את הטלפון.</p>
       </div>
-      <div class="deal">קונים 2 ומעלה? <b>25% הנחה</b> על כל ההזמנה</div>
     </div>
-    <div class="pgrid">
-      <a class="pcard big" href="#" style="--tint:var(--cz-sky-tint)">
-        <span class="badge">הכי אהוב</span>
-        <span class="add" aria-hidden="true">+</span>
-        <div class="art"><img src="assets/img/char-bluedragon.webp" alt="תג Bluedragon, דרקון כחול" title="Bluedragon" width="512" height="512" loading="lazy"></div>
-        <div class="info"><div><div class="name">Bluedragon</div><div class="persona">לכלבים עם אופי של מלך. אמיץ, סקרן, תמיד ראשון בפארק.</div></div><div class="price"><b>99 ₪</b><s>129 ₪</s></div></div>
-      </a>
-      <a class="pcard" href="#" style="--tint:var(--cz-sun-tint)">
-        <span class="add" aria-hidden="true">+</span>
-        <div class="art"><img src="assets/img/char-bubblyduck.webp" alt="תג Bubblyduck, ברווז צהוב" title="Bubblyduck" width="512" height="512" loading="lazy"></div>
-        <div class="info"><div><div class="name">Bubblyduck</div><div class="persona">שמח, קופצני ואוהב מים</div></div><div class="price"><b>99 ₪</b><s>129 ₪</s></div></div>
-      </a>
-      <a class="pcard" href="#" style="--tint:var(--cz-pink-tint)">
-        <span class="add" aria-hidden="true">+</span>
-        <div class="art"><img src="assets/img/char-captaincheese.webp" alt="תג Captaincheese, דמות ורודה עם רטייה" title="Captaincheese" width="512" height="512" loading="lazy"></div>
-        <div class="info"><div><div class="name">Captaincheese</div><div class="persona">הרפתקן עם רטייה וכוכב</div></div><div class="price"><b>99 ₪</b><s>129 ₪</s></div></div>
-      </a>
-      <a class="pcard" href="#" style="--tint:#EFEFEF">
-        <span class="add" aria-hidden="true">+</span>
-        <div class="art"><img src="assets/img/char-cheekypanda.webp" alt="תג Cheekypanda, פנדה עם לשון בחוץ" title="Cheekypanda" width="512" height="512" loading="lazy"></div>
-        <div class="info"><div><div class="name">Cheekypanda</div><div class="persona">חצוף, מצחיק, לא שוכח ללקק</div></div><div class="price"><b>99 ₪</b><s>129 ₪</s></div></div>
-      </a>
-      <a class="pcard" href="#" style="--tint:#F5ECE4">
-        <span class="add" aria-hidden="true">+</span>
-        <div class="art"><img src="assets/img/char-honeybear.webp" alt="תג Honeybear, דובון חום עם דבש" title="Honeybear" width="512" height="512" loading="lazy"></div>
-        <div class="info"><div><div class="name">Honeybear</div><div class="persona">מתוק, רגוע ואוהב פינוקים</div></div><div class="price"><b>99 ₪</b><s>129 ₪</s></div></div>
-      </a>
-    </div>
-    <div class="quiz">
-      <div class="q-chars" aria-hidden="true"><img src="assets/img/char-honeybear.webp" alt=""><img src="assets/img/char-bluedragon.webp" alt=""><img src="assets/img/char-bubblyduck.webp" alt=""></div>
-      <div><b>לא בטוחים מי מתאים?</b><p>3 שאלות קצרות על הכלב, ונגיד לכם איזה צ'אפיז הוא.</p></div>
-      <a class="cz-btn" href="#">לשאלון ←</a>
-    </div>
-  </div>
-</section>
 
-<!-- ================= PRIVACY ================= -->
-<section class="privacy" id="privacy">
-  <span class="bubble" style="width:140px;height:140px;background:var(--cz-tangerine);top:40px;left:-50px;opacity:.7"></span>
-  <div class="wrap">
-    <div class="app-shot">
-      <div class="screen"><img src="assets/img/app-profile.webp" alt="מסך פרופיל של כלב באפליקציית צ'אפיז, עם שם, גזע וגיל" title="פרופיל כלב באפליקציה" width="480" height="665" loading="lazy"></div>
-      <div class="lost-toggle"><span class="switch" aria-hidden="true"></span>חיית המחמד אבודה</div>
-    </div>
-    <div>
-      <span class="kicker">פרטיות</span>
-      <h2>אתם מחליטים מה רואים</h2>
-      <p class="lead">הפרופיל שלכם, הכללים שלכם. בוחרים מה מוצג למי שסורק את התג, ומשנים בכל רגע.</p>
-      <ul class="locks">
-        <li><span class="ic" style="--c:var(--cz-sky-tint)"><svg class="icon"><use href="#i-lock"/></svg></span><div><b>מנעול ליד כל שדה</b><span>טלפון, כתובת, מייל: כל פרט אפשר להציג או להסתיר.</span></div></li>
-        <li><span class="ic" style="--c:var(--cz-sun-tint)"><svg class="icon"><use href="#i-alert"/></svg></span><div><b>מצב "חיית המחמד אבודה"</b><span>בלחיצה אחת הפרופיל נפתח במלואו למי שסורק, עד שהכלב חוזר הביתה.</span></div></li>
-        <li><span class="ic" style="--c:var(--cz-pink-tint)"><svg class="icon"><use href="#i-edit"/></svg></span><div><b>מעדכנים בלי להחליף תג</b><span>עברתם דירה? מספר חדש? מעדכנים בפרופיל והתג ממשיך לעבוד.</span></div></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GALLERY ================= -->
-<section class="gallery">
-  <div class="wrap">
-    <div class="gallery-head">
-      <div>
-        <span class="kicker">הכלבים של צ'אפיז</span>
-        <h2>כבר מסתובבים עם תעודת זהות</h2>
+    <div class="step" data-step="2">
+      <figure class="step-media">
+        <div class="frame">
+          <img src="assets/img/moment-found.webp" alt="טלפון ביד, ועל המסך הפרופיל של ניקולאס עם הכפתור הירוק 'צור קשר עם הבעלים'" title="הפרופיל של ניקולאס" width="720" height="1280" loading="lazy" draggable="false">
+        </div>
+        <figcaption class="cap"><img src="assets/img/char-bubblyduck.webp" alt="" width="505" height="505" loading="lazy"><span>מה שרואה מי שמצא את <b>ניקולאס</b>, שנייה אחרי שהצמיד טלפון</span></figcaption>
+      </figure>
+      <div class="step-text">
+        <h3>נפתח הפרופיל של הכלב</h3>
+        <p>על המסך מופיעים השם שלו, הגזע, הגיל ומה שחשוב לדעת עליו, ומעל הפרטים כפתור אחד גדול: צור קשר עם הבעלים.</p>
       </div>
-      <a class="cz-btn cz-btn--secondary" href="#">שלחו לנו תמונה של הכלב ←</a>
     </div>
-    <div class="polaroids">
-      <figure class="pol" style="--r:-3deg;margin:0"><div class="tape"></div><img src="assets/img/dog-yorkie.webp" alt="יורקשייר טרייר על מיטה עם תג צ'אפיז צהוב" title="יורקי עם תג צ'אפיז" width="689" height="839" loading="lazy"></figure>
-      <figure class="pol" style="--r:2.5deg;margin:40px 0 0"><div class="tape" style="background:rgba(247,208,42,.6)"></div><img src="assets/img/dog-mix-field.webp" alt="כלב מעורב לבן-חום שוכב בפארק ומחייך, עם תג על הקולר" title="כלב מעורב עם תג בפארק" width="519" height="833" loading="lazy"></figure>
-      <figure class="pol" style="--r:-1.5deg;margin:0"><div class="tape" style="background:rgba(244,168,168,.7)"></div><img src="assets/img/dog-pomeranian-captain.webp" alt="פומרניאן לבן עומד על שתי רגליים עם תג Captaincheese" title="פומרניאן עם תג Captaincheese" width="703" height="844" loading="lazy"></figure>
-      <figure class="pol" style="--r:3deg;margin:24px 0 0"><div class="tape"></div><img src="assets/img/dog-brindle-duck.webp" alt="כלב ברינדל שוכב על הדשא עם תג Bubblyduck" title="כלב ברינדל עם תג Bubblyduck" width="686" height="817" loading="lazy"></figure>
+
+    <div class="step" data-step="3">
+      <figure class="step-media">
+        <div class="frame frame--screen">
+          <div class="phone"><div class="screen">
+            <img src="assets/img/screen-owner.webp" alt="מסך הבעלים בפרופיל של ניקולאס: שם, טלפון, אימייל ועיר, עם פרטים לדוגמה" title="לשונית הבעלים" width="945" height="1560" loading="lazy" draggable="false">
+          </div></div>
+        </div>
+        <figcaption class="cap"><span>מסך אמיתי מהפרופיל של ניקולאס. את פרטי הקשר החלפנו בפרטים לדוגמה</span></figcaption>
+      </figure>
+      <div class="step-text">
+        <h3>ואתם כבר על הקו</h3>
+        <p>בלשונית הבעלים מופיעים רק הפרטים שבחרתם להציג, ומי שמצא את הכלב מתקשר או כותב לכם ישר מהמסך. מה מוצג ומה מוסתר, אתם קובעים בפרופיל ומשנים מתי שרוצים.</p>
+      </div>
     </div>
+
   </div>
+  <div class="steps-nav" id="steps-nav">
+    <button class="nav-btn" type="button" data-dir="-1" aria-label="לשלב הקודם" title="לשלב הקודם" disabled><span aria-hidden="true">→</span></button>
+    <div class="steps-dots">
+      <button type="button" aria-label="שלב 1 מתוך 4" aria-current="step"></button>
+      <button type="button" aria-label="שלב 2 מתוך 4"></button>
+      <button type="button" aria-label="שלב 3 מתוך 4"></button>
+      <button type="button" aria-label="שלב 4 מתוך 4"></button>
+    </div>
+    <button class="nav-btn" type="button" data-dir="1" aria-label="לשלב הבא" title="לשלב הבא"><span aria-hidden="true">←</span></button>
+  </div>
+
+  <div class="blk-cta">
+    <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+    <a class="more" href="#" data-page="/איך-זה-עובד/" title="איך זה עובד, צעד אחר צעד">איך זה עובד, צעד אחר צעד <span class="arr" aria-hidden="true">←</span></a>
+  </div>
+
+</div>
 </section>
 
-<!-- ================= REVIEWS (placeholder until real ones arrive) ================= -->
-<section class="reviews">
-  <div class="wrap">
-    <h2>מה אומרים הבעלים</h2>
-    <p class="lead">כאן ייכנסו ביקורות אמיתיות, עם תמונה של הכלב ואישור של הלקוח. אחרי הקמת כרטיס העסק בגוגל, גם הדירוג משם.</p>
-    <div class="rv-grid">
-      <div class="rv"><div><div class="stars" aria-hidden="true">★★★★★</div><p>ציטוט אמיתי של לקוח, רצוי עם סיפור קצר: איך התג עזר, מה הוא אוהב בו.</p></div><small>שם הלקוח · שם הכלב · עיר</small></div>
-      <div class="rv"><div><div class="stars" aria-hidden="true">★★★★★</div><p>ביקורת שנייה</p></div><small>שם · כלב · עיר</small></div>
-      <div class="rv"><div><div class="stars" aria-hidden="true">★★★★★</div><p>ביקורת שלישית</p></div><small>שם · כלב · עיר</small></div>
+<!-- ============ 4. The characters (cream) ============
+     ACF (home > models): kicker · title · lede · cta_prefix
+     models = WooCommerce products (5): name, line (short description),
+     price, regular_price, art (product image), real_photo, photo_focus,
+     photo_dog, photo_desc, url. No real photo -> art + no_photo_text. -->
+<section class="blk blk--cream pick" id="models" aria-labelledby="pick-title">
+<div class="wrap pick-grid">
+
+  <header class="pick-head">
+    <p class="kicker">הדמויות</p>
+    <h2 class="h2" id="pick-title">איזה צ'אפיז מתאים לכלב שלכם?</h2>
+    <p class="lede">בכל התגים אותה טכנולוגיה בדיוק, וההבדל הוא רק באופי. לחצו על תג כדי להכיר אותו מקרוב.</p>
+  </header>
+
+  <figure class="pick-stage">
+    <div class="ph pick-photo" id="pick-photo">
+      <img class="photo" id="pick-img" src="assets/img/pick-bubblyduck.webp" alt="יד מחזיקה את תג הברווז הצהוב שעל הקולר של ניקולאס" title="Bubblyduck על ניקולאס" width="720" height="1280" style="--pos: 50% 30%">
+      <img class="art" id="pick-art" src="assets/img/char-honeybear.webp" alt="" width="505" height="505" loading="lazy" hidden>
     </div>
+    <figcaption class="cap" id="pick-cap" aria-live="polite"><span><b>ניקולאס</b>, רועה גרמני. התג שלו: <bdi>Bubblyduck</bdi></span></figcaption>
+  </figure>
+
+  <div class="pick-ctrl">
+    <div class="picker" role="radiogroup" aria-label="בחירת דמות">
+      <button class="pick-btn" type="button" role="radio" aria-checked="true" tabindex="0"
+        data-name="Bubblyduck" data-line="לכלבים שמחים וקופצניים, שלא מוותרים על אף שלולית בדרך"
+        data-photo="assets/img/pick-bubblyduck.webp" data-pos="50% 30%" data-alt="יד מחזיקה את תג הברווז הצהוב שעל הקולר של ניקולאס"
+        data-dog="ניקולאס" data-desc="רועה גרמני" data-url="#">
+        <img src="assets/img/char-bubblyduck.webp" alt="" width="505" height="505" loading="lazy"><span class="nm"><bdi>Bubblyduck</bdi></span>
+      </button>
+      <button class="pick-btn" type="button" role="radio" aria-checked="false" tabindex="-1"
+        data-name="Bluedragon" data-line="לכלבים עם אופי של מלך, אמיצים וסקרנים, שתמיד מגיעים ראשונים לפארק"
+        data-photo="assets/img/pick-bluedragon.webp" data-pos="50% 62%" data-alt="כלב חום שוכב על חצץ ומקבל ליטוף, ועל הקולר שלו תג הדרקון הכחול"
+        data-dog="כלב באירוע האימוץ" data-desc="אוקטובר 2026" data-url="#">
+        <img src="assets/img/char-bluedragon.webp" alt="" width="505" height="505" loading="lazy"><span class="nm"><bdi>Bluedragon</bdi></span>
+      </button>
+      <button class="pick-btn" type="button" role="radio" aria-checked="false" tabindex="-1"
+        data-name="Captaincheese" data-line="להרפתקנים עם רטייה וכוכב, שכל טיול אצלם הופך למסע"
+        data-photo="" data-art="assets/img/char-captaincheese.webp" data-url="#">
+        <img src="assets/img/char-captaincheese.webp" alt="" width="505" height="505" loading="lazy"><span class="nm"><bdi>Captaincheese</bdi></span>
+      </button>
+      <button class="pick-btn" type="button" role="radio" aria-checked="false" tabindex="-1"
+        data-name="Cheekypanda" data-line="לחצופים המצחיקים, שאף פעם לא שוכחים ללקק"
+        data-photo="assets/img/pick-cheekypanda.webp" data-pos="50% 40%" data-alt="כלב לבן חום יושב על שטיח בסלון, ועל הקולר שלו תג הפנדה"
+        data-dog="כלב של לקוחות" data-desc="בסלון בבית" data-url="#">
+        <img src="assets/img/char-cheekypanda.webp" alt="" width="505" height="505" loading="lazy"><span class="nm"><bdi>Cheekypanda</bdi></span>
+      </button>
+      <button class="pick-btn" type="button" role="radio" aria-checked="false" tabindex="-1"
+        data-name="Honeybear" data-line="למתוקים והרגועים, שהכי אוהבים פינוק על הספה"
+        data-photo="assets/img/pick-honeybear.webp" data-pos="50% 25%" data-alt="פודל ננסי חום בזרועות הבעלים, ועל הקולר הוורוד שלו תג הדובי"
+        data-dog="פודל ננסי" data-desc="אצל לקוחות" data-url="#">
+        <img src="assets/img/char-honeybear.webp" alt="" width="505" height="505" loading="lazy"><span class="nm"><bdi>Honeybear</bdi></span>
+      </button>
+    </div>
+
+    <div class="pick-info" aria-live="polite">
+      <p class="pick-name" id="pick-name"><bdi>Bubblyduck</bdi></p>
+      <p class="pick-line" id="pick-line">לכלבים שמחים וקופצניים, שלא מוותרים על אף שלולית בדרך</p>
+    </div>
+
+    <div class="pick-buy">
+      <a class="btn" id="pick-cta" href="#" title="להזמנת Bubblyduck">להזמנת <bdi id="pick-cta-name">Bubblyduck</bdi> <span class="arr" aria-hidden="true">←</span></a>
+      <p class="price">
+        <span class="price-row">
+          <span class="now">99 <span class="cur">₪</span></span>
+          <s><span class="sr-only">במקום </span>129 ₪</s>
+        </span>
+        <span class="deal">25% הנחה על 2 תגים ומעלה</span>
+      </p>
+    </div>
+    <ul class="assure">
+      <li><svg aria-hidden="true"><use href="#i-truck"/></svg>משלוח לכל הארץ</li>
+      <li><svg aria-hidden="true"><use href="#i-swap"/></svg>נשבר? נדאג לכם לתג חדש</li>
+      <li><svg aria-hidden="true"><use href="#i-once"/></svg>בלי מנוי, משלמים פעם אחת</li>
+    </ul>
+    <a class="more pick-more" href="#" data-page="/חנות/" title="כל התגים בחנות">כל התגים בחנות <span class="arr" aria-hidden="true">←</span></a>
   </div>
+
+</div>
 </section>
 
-<!-- ================= STORY ================= -->
-<section class="story" id="story">
-  <div class="wrap">
-    <div class="story-img">
-      <img src="assets/img/factory-duck-tray.webp" alt="מגש של תגי Bubblyduck צהובים בפס הייצור" title="תגי צ'אפיז בייצור" width="817" height="900" loading="lazy">
-      <div class="stamp">סימן מסחר רשום</div>
-    </div>
-    <div>
-      <span class="kicker">הסיפור שלנו</span>
-      <h2>נולד מפוסטים על כלבים שאבדו</h2>
-      <p>בתקופת המלחמה והאזעקות, הקבוצות בפייסבוק התמלאו בעשרות פוסטים ביום על כלבים שנמצאו ברחוב, ואף אחד לא ידע של מי הם. הכלב לא יכול לדבר ולתת את הפרטים של הבעלים.</p>
-      <p>המפתחים של צ'אפיז מגיעים מעולם בעלי החיים, ורצו פתרון פשוט: תג שכל אחד ברחוב יודע לקרוא, שעובד בלי סוללה ובלי חשמל, ושגם נראה טוב על הכלב.</p>
-      <a class="cz-btn cz-btn--secondary" href="#">עוד עלינו ←</a>
-    </div>
+<!-- ============ 5. Your side: setup + privacy (night) ============
+     ACF (home > owner): kicker · title · lede · setup_image, setup_caption
+     setup_steps (repeater, 3: title, text) · privacy_title
+     privacy_rows (repeater: label, text) · privacy_screen, privacy_caption · cta · more_link -->
+<section class="blk blk--night owner" id="privacy" aria-labelledby="owner-title">
+<div class="wrap">
+
+  <header class="owner-head">
+    <p class="kicker">הצד שלכם</p>
+    <h2 class="h2" id="owner-title">שלוש דקות של הפעלה, ואתם מחליטים מה רואים</h2>
+    <p class="lede">כשהתג מגיע הביתה, אין מה להתקין ואין מה לטעון. תולים אותו, מצמידים טלפון וממלאים פרופיל קצר, ומכאן כל פרט נשאר בשליטה שלכם.</p>
+  </header>
+
+  <div class="setup">
+    <figure class="setup-media">
+      <div class="ph"><img src="assets/img/setup-attach.webp" alt="ידיים מחברות תג צ'אפיז ורוד לטבעת של הקולר של בורדר קולי" title="מחברים את התג לקולר" width="720" height="1280" loading="lazy"></div>
+      <figcaption class="cap"><span>מחברים לטבעת של הקולר, וזה כל מה שצריך</span></figcaption>
+    </figure>
+    <ol class="setup-steps">
+      <li><h3>תולים את התג</h3><p>על כל טבעת של קולר או רתמה, בלי כלים ובלי הוראות.</p></li>
+      <li><h3>מצמידים טלפון ונרשמים</h3><p>בפעם הראשונה הטלפון פותח הרשמה קצרה, והתג נקשר לחשבון שלכם.</p></li>
+      <li><h3>ממלאים פרופיל</h3><p>שם ותמונה של הכלב, הטלפון שלכם ופרטי הווטרינר. אפשר לעדכן הכל גם אחר כך.</p></li>
+    </ol>
   </div>
+
+  <div class="privacy">
+    <div class="privacy-text">
+      <h3 class="sub-h">מה רואה מי שסורק? אתם קובעים</h3>
+      <dl class="rows">
+        <div class="row"><dt>מנעול ליד כל פרט</dt><dd>טלפון, מייל וכתובת: כל פרט בפרופיל אפשר להציג למי שסורק או להסתיר ממנו, בלחיצה על המנעול שלידו.</dd></div>
+        <div class="row"><dt>מצב חיית מחמד אבודה</dt><dd>אם הכלב נעלם, מסמנים את המצב הזה, והפרופיל נפתח במלואו לכל מי שסורק עד שהוא חוזר הביתה.</dd></div>
+        <div class="row"><dt>מעדכנים בלי להחליף תג</dt><dd>עברתם דירה או החלפתם מספר? משנים בפרופיל, והתג ממשיך לעבוד עם הפרטים החדשים.</dd></div>
+      </dl>
+    </div>
+    <figure class="privacy-media">
+      <div class="frame frame--screen">
+        <div class="phone"><div class="screen">
+          <img src="assets/img/screen-privacy.webp" alt="מסך עריכת הבעלים באפליקציה: טלפון, מייל וכתובת עם מנעול ליד כל אחד, ומתחתם סימון 'חיית המחמד אבודה'" title="עריכת הפרופיל" width="945" height="1760" loading="lazy">
+        </div></div>
+      </div>
+      <figcaption class="cap"><span>מסך העריכה בפרופיל של ניקולאס, עם פרטים לדוגמה</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="blk-cta">
+    <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+    <a class="more" href="#" data-page="/פרטיות/" title="כל מה שחשוב לדעת על פרטיות">כל מה שחשוב לדעת על פרטיות <span class="arr" aria-hidden="true">←</span></a>
+  </div>
+
+</div>
 </section>
 
-<!-- ================= FAQ ================= -->
-<section class="faq" id="faq">
-  <div class="wrap">
-    <div class="faq-side">
-      <span class="kicker">שאלות נפוצות</span>
-      <h2>שאלתם, הקפטן עונה</h2>
-      <p class="lead">לא מצאתם תשובה? כתבו לנו בוואטסאפ, עונים מהר.</p>
-      <img src="assets/img/char-captaincheese.webp" alt="" width="512" height="512" loading="lazy">
+<!-- ============ 6. What you get (paper) ============
+     ACF (home > inside): kicker · title · lede · main_image · film_mp4, film_poster (small inset)
+     caption · specs (repeater: label, text) · cta · more_link -->
+<section class="blk inside" id="inside" aria-labelledby="inside-title">
+<div class="wrap duo-grid">
+
+  <header class="duo-head">
+    <p class="kicker">מה מקבלים בכל תג</p>
+    <h2 class="h2" id="inside-title">תג שלא דורש מכם כלום, לא&nbsp;טעינה, לא&nbsp;מנוי ולא&nbsp;תחזוקה</h2>
+  </header>
+
+  <figure class="duo-media">
+    <div class="ph duo-main">
+      <img src="assets/img/tag-closeup.webp" alt="יד מחזיקה מקרוב את תג הברווז הצהוב שעל הקולר של ניקולאס" title="Bubblyduck מקרוב" width="720" height="1280" loading="lazy">
     </div>
-    <div>
-      <details open><summary>איך מי שמוצא את הכלב יודע שאפשר לסרוק?</summary><p>בגב של כל תג יש סמל של טלפון וגלי סריקה. מצמידים את הטלפון לתג ונפתח עמוד עם הפרטים שבחרתם להציג. לא צריך להוריד אפליקציה.</p></details>
-      <details><summary>זה עובד בכל טלפון?</summary><p>כמעט בכל סמארטפון מהשנים האחרונות, אייפון ואנדרואיד, כל עוד יש בו NFC. באייפון מצמידים את החלק העליון של הטלפון, באנדרואיד בדרך כלל את האמצע.</p></details>
-      <details><summary>יש מנוי או תשלום חודשי?</summary><p>לא. משלמים פעם אחת על התג, והפרופיל שלכם ממשיך לעבוד.</p></details>
-      <details><summary>מה קורה אם אני מחליף מספר טלפון?</summary><p>מעדכנים את הפרטים בפרופיל, והתג ממשיך לעבוד עם הפרטים החדשים. לא צריך תג חדש.</p></details>
+    <div class="ph duo-still">
+      <video class="lazy-film" muted loop playsinline preload="none" width="576" height="1024"
+        poster="assets/img/factory-scan-poster.webp" data-src="assets/video/factory-scan.mp4"
+        aria-label="עובדת במפעל מצמידה טלפון לתגים ארוזים, אחד אחרי השני"></video>
+      <button class="film-toggle" type="button" aria-pressed="false" aria-label="עצירת הסרטון" title="עצירת הסרטון">
+        <svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        <svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg>
+      </button>
+    </div>
+    <figcaption class="cap duo-cap"><span>בסרטון הקטן: בדיקת סריקה במפעל, תג אחרי תג</span></figcaption>
+  </figure>
+
+  <div class="duo-body">
+    <p class="lede">בכל חמש הדמויות זה אותו תג בדיוק, ואחרי שתליתם אותו על הקולר, אין סיבה לגעת בו שוב.</p>
+    <div class="compare">
+      <dl>
+        <div class="row"><dt>עמיד במים</dt><dd>גשם, שלוליות ומקלחת לא מפריעים לו, כי אין בו סוללה ואין בו חיבורים.</dd></div>
+        <div class="row"><dt>בלי סוללה ובלי טעינה</dt><dd>רכיב ה-NFC שבתוך התג מקבל את האנרגיה מהטלפון שסורק אותו, אז אין מה לטעון ואין מה להחליף.</dd></div>
+        <div class="row"><dt>מתאים לכל קולר</dt><dd>נתלה על כל טבעת של קולר או רתמה, גם של חתולים. לכלבים קטנים מאוד עדיף לתלות אותו על הרתמה.</dd></div>
+        <div class="row"><dt>בלי מנוי</dt><dd>משלמים פעם אחת על התג, והפרופיל ממשיך לעבוד בלי תשלום חודשי.</dd></div>
+        <div class="row"><dt>נבדק לפני האריזה</dt><dd>כל תג נסרק עוד במפעל, כך שהוא עובד מהרגע שהוא מגיע אליכם.</dd></div>
+      </dl>
+    </div>
+    <div class="blk-cta">
+      <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+      <a class="more" href="#" data-page="/חנות/" title="המפרט המלא בעמוד המוצר">המפרט המלא בעמוד המוצר <span class="arr" aria-hidden="true">←</span></a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ============ 7. Community (cream) ============
+     ACF (home > community): kicker · title · lede
+     tiles (repeater: image, alt, caption, tag) · cta · more_link (WhatsApp)
+     reviews: hidden until real reviews exist (no title, per brief) -->
+<section class="blk blk--cream community" id="community" aria-labelledby="community-title">
+<div class="wrap">
+
+  <header class="community-head">
+    <p class="kicker">הקהילה</p>
+    <h2 class="h2" id="community-title">כבר מסתובבים איתו, בפארקים ובסלון</h2>
+    <p class="lede">כלבים וחתולים של לקוחות, וחברים שפגשנו באירועי אימוץ. יש לכם תמונה עם התג? נשמח שתשלחו לנו.</p>
+  </header>
+
+  <div class="mosaic">
+    <figure class="tile t-a"><img src="assets/img/community-cat-duck.webp" alt="חתול ג'ינג'י לבן יושב על מדף, ותג הברווז על הצוואר" title="חתול עם Bubblyduck" width="900" height="1200" loading="lazy" style="--pos: 50% 40%"><figcaption>חתול עם <bdi>Bubblyduck</bdi></figcaption></figure>
+    <figure class="tile t-b"><img src="assets/img/community-wa2.webp" alt="כלב ברינדל שוכב על הדשא, ותג הברווז על הקולר" title="כלב עם Bubblyduck" width="686" height="817" loading="lazy" style="--pos: 50% 50%"><figcaption>בפארק עם <bdi>Bubblyduck</bdi></figcaption></figure>
+    <figure class="tile t-c"><img src="assets/img/community-collie-bear.webp" alt="בורדר קולי שוכב על שטיח בסלון ומחייך, ותג הדובי על הקולר" title="בורדר קולי עם Honeybear" width="1050" height="1400" loading="lazy" style="--pos: 50% 45%"><figcaption>בורדר קולי עם <bdi>Honeybear</bdi></figcaption></figure>
+    <figure class="tile t-d"><img src="assets/img/community-gsd.webp" alt="רועה גרמני יושב במרפסת, ותג הברווז על הקולר" title="רועה גרמני עם Bubblyduck" width="900" height="1200" loading="lazy" style="--pos: 50% 35%"><figcaption>רועה גרמני עם <bdi>Bubblyduck</bdi></figcaption></figure>
+    <figure class="tile t-e"><img src="assets/img/community-wa3.webp" alt="פומרניאן לבן עומד על הרגליים האחוריות, ותג הקפטן על הרתמה" title="פומרניאן עם Captaincheese" width="703" height="844" loading="lazy" style="--pos: 50% 40%"><figcaption>פומרניאן עם <bdi>Captaincheese</bdi></figcaption></figure>
+    <figure class="tile t-f"><img src="assets/img/community-cat-blue.webp" alt="חתול ג'ינג'י לבן שוכב על הרצפה, ותג הדרקון הכחול על הצוואר" title="חתול עם Bluedragon" width="1050" height="1400" loading="lazy" style="--pos: 50% 35%"><figcaption>חתול עם <bdi>Bluedragon</bdi></figcaption></figure>
+    <figure class="tile t-g"><img src="assets/img/community-cat-grey.webp" alt="חתול אפור פרוותי שוכב על הרצפה, ותג הברווז על הצוואר" title="חתול עם Bubblyduck" width="1050" height="1400" loading="lazy" style="--pos: 50% 45%"><figcaption>חתול עם <bdi>Bubblyduck</bdi></figcaption></figure>
+  </div>
+
+  <!-- reviews (hidden): real reviews only, with the dog's photo and the customer's OK. Google rating once the business profile exists. -->
+  <div class="reviews" hidden></div>
+
+  <div class="blk-cta">
+    <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+    <a class="more" href="#" data-wa="photo" title="שלחו לנו תמונה בוואטסאפ">שלחו לנו תמונה בוואטסאפ <span class="arr" aria-hidden="true">←</span></a>
+  </div>
+
+</div>
+</section>
+
+<!-- ============ 8. Our story (night) ============
+     ACF (home > story): kicker · title · text (wysiwyg) · image, caption · cta · more_link -->
+<section class="blk blk--night story" id="story" aria-labelledby="story-title">
+<div class="wrap story-grid">
+
+  <figure class="story-media">
+    <div class="ph"><img src="assets/img/story-amir.webp" alt="איש צוות של צ'אפיז בחולצת המותג מחזיק תג ומסביר עליו ליד דוכן באירוע אימוץ" title="צ'אפיז באירוע אימוץ" width="720" height="1280" loading="lazy"></div>
+    <figcaption class="cap"><span>מסבירים על התג באירוע אימוץ, אוקטובר 2026</span></figcaption>
+  </figure>
+
+  <div class="story-text">
+    <p class="kicker">הסיפור שלנו</p>
+    <h2 class="h2" id="story-title">נולד מפוסטים על כלבים שאבדו</h2>
+    <p class="lede">בתקופת המלחמה והאזעקות, קבוצות הפייסבוק התמלאו בעשרות פוסטים ביום על כלבים שנמצאו ברחוב, ואף אחד לא ידע של מי הם. כלב לא יכול לתת את המספר של הבעלים, ומי שמצא אותו נשאר עם כלב מבוהל ובלי כתובת.</p>
+    <p class="lede">המייסדים של צ'אפיז מגיעים מעולם בעלי החיים, וחיפשו פתרון פשוט: תג שכל אחד ברחוב יודע לקרוא, שעובד בלי סוללה, ושגם נראה טוב על הכלב. ככה נולדו חמש הדמויות של צ'אפיז.</p>
+    <div class="blk-cta">
+      <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+      <a class="more" href="#" data-page="/הסיפור-שלנו/" title="עוד עלינו">עוד עלינו <span class="arr" aria-hidden="true">←</span></a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ============ 9. FAQ (paper) ============
+     ACF (home > faq): kicker · title · lede · image · faqs (repeater: q, a) · more_link
+     Output FAQPage schema from the same repeater in the WP build. -->
+<section class="blk faq" id="faq" aria-labelledby="faq-title">
+<div class="wrap faq-grid">
+
+  <div class="faq-main">
+    <p class="kicker">שאלות נפוצות</p>
+    <h2 class="h2" id="faq-title">מה ששואלים אותנו הכי הרבה</h2>
+    <p class="lede">לא מצאתם תשובה? כתבו לנו בוואטסאפ, ונענה מהר.</p>
+    <div class="qa">
+      <details><summary>איך מי שמוצא את הכלב יודע שאפשר לסרוק?</summary><p>בגב של כל תג יש סמל של טלפון וגלי סריקה. מצמידים את הטלפון לתג, ונפתח עמוד עם הפרטים שבחרתם להציג. לא צריך להוריד אפליקציה.</p></details>
+      <details><summary>זה עובד בכל טלפון?</summary><p>כמעט בכל סמארטפון מהשנים האחרונות, אייפון ואנדרואיד, כל עוד יש בו NFC. באייפון מצמידים את החלק העליון של הטלפון, ובאנדרואיד בדרך כלל את האמצע.</p></details>
+      <details><summary>יש מנוי או תשלום חודשי?</summary><p>לא. משלמים פעם אחת על התג, והפרופיל ממשיך לעבוד.</p></details>
+      <details><summary>מה קורה אם מחליפים מספר טלפון?</summary><p>מעדכנים את הפרטים בפרופיל, והתג ממשיך לעבוד עם הפרטים החדשים. לא צריך תג חדש.</p></details>
       <details><summary>התג עמיד במים?</summary><p>כן. אין בו סוללה ואין מה לטעון, אז גשם, מקלחת ושלוליות לא מפריעים לו.</p></details>
-      <details><summary>מתאים לכלבים קטנים ולחתולים?</summary><p>מתאים לרוב הכלבים ולחתולים, ומתחבר לכל טבעת של קולר או רתמה. לכלבים קטנים מאוד מומלץ לתלות אותו על הרתמה.</p></details>
-      <details><summary>אקבל התראה כשמישהו סורק את התג?</summary><p>כרגע לא. מי שסורק רואה את הטלפון שלכם ומתקשר אליכם ישירות.</p></details>
+      <details><summary>מתאים לכלבים קטנים ולחתולים?</summary><p>כן. הוא נתלה על כל טבעת של קולר או רתמה, וכבר יש לא מעט חתולים שמסתובבים איתו. לכלבים קטנים מאוד מומלץ לתלות אותו על הרתמה.</p></details>
+      <details><summary>מקבלים התראה כשמישהו סורק את התג?</summary><p>כרגע לא. מי שסורק רואה את הפרטים שבחרתם להציג, ומתקשר אליכם ישירות.</p></details>
       <details><summary>ומה אם התג נשבר?</summary><p>פנו אלינו ונדאג לכם לתג חדש. כל הפרטים בתקנון.</p></details>
     </div>
-  </div>
-</section>
-
-<!-- ================= FINAL CTA ================= -->
-<section class="final">
-  <span class="bubble" style="width:200px;height:200px;background:var(--cz-tangerine);top:-60px;left:-60px"></span>
-  <span class="bubble" style="width:90px;height:90px;background:var(--cz-sunset);top:80px;right:10%"></span>
-  <div class="wrap" style="position:relative;z-index:1">
-    <h2>כל כלב צריך תעודת זהות</h2>
-    <p>99 ₪ במקום 129 ₪, ו-25% הנחה על 2 תגים ומעלה. 3 דקות הפעלה, ואתם משחררים בפארק בראש שקט.</p>
-    <a class="cz-btn" href="#models">לבחירת הדמות ←</a>
-    <div class="parade" aria-hidden="true">
-      <img src="assets/img/char-bluedragon.webp" alt=""><img src="assets/img/char-bubblyduck.webp" alt=""><img src="assets/img/char-captaincheese.webp" alt=""><img src="assets/img/char-cheekypanda.webp" alt=""><img src="assets/img/char-honeybear.webp" alt="">
+    <div class="blk-cta">
+      <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+      <a class="more" href="#" data-page="/שאלות-נפוצות/" title="לכל השאלות והתשובות">לכל השאלות והתשובות <span class="arr" aria-hidden="true">←</span></a>
     </div>
   </div>
+
+  <figure class="faq-media">
+    <div class="ph"><img src="assets/img/tray-ducks.webp" alt="עשרות תגי Bubblyduck צהובים מסודרים בשורות לפני האריזה" title="תגי Bubblyduck לפני האריזה" width="495" height="655" loading="lazy"></div>
+  </figure>
+
+</div>
+</section>
+
+<!-- ============ 10. Closing (night) ============
+     ACF (home > end): title · text · film_mp4, film_poster · cta · more_link (WhatsApp) -->
+<section class="blk blk--night end" id="end" aria-labelledby="end-title">
+<div class="wrap end-grid">
+
+  <div class="end-text">
+    <h2 class="h2 end-title" id="end-title">שהטיול הבא יתחיל עם תג על הקולר</h2>
+    <p class="lede">99 ₪ במקום 129 ₪, ו-25% הנחה על 2 תגים ומעלה. חמש דמויות, אותה טכנולוגיה, ומשלוח עד הבית.</p>
+    <ul class="assure">
+      <li><svg aria-hidden="true"><use href="#i-truck"/></svg>משלוח לכל הארץ</li>
+      <li><svg aria-hidden="true"><use href="#i-swap"/></svg>נשבר? נדאג לכם לתג חדש</li>
+      <li><svg aria-hidden="true"><use href="#i-once"/></svg>בלי מנוי, משלמים פעם אחת</li>
+    </ul>
+    <div class="blk-cta">
+      <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+      <a class="more" href="#" data-wa="question" title="יש שאלה? כתבו לנו בוואטסאפ">יש שאלה? כתבו לנו בוואטסאפ <span class="arr" aria-hidden="true">←</span></a>
+    </div>
+  </div>
+
+  <figure class="end-media">
+    <div class="ph">
+      <video class="lazy-film" muted loop playsinline preload="none" width="720" height="1280"
+        poster="assets/img/end-walk-poster.webp" data-src="assets/video/end-walk.mp4"
+        aria-label="בורדר קולי והבעלים שלו הולכים בשביל בפארק"></video>
+      <button class="film-toggle" type="button" aria-pressed="false" aria-label="עצירת הסרטון" title="עצירת הסרטון">
+        <svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        <svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg>
+      </button>
+    </div>
+  </figure>
+
+</div>
 </section>
 </main>
 
-<footer class="footer">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <img class="flogo" src="assets/img/chapiz-logo.svg" alt="Chapiz" title="Chapiz" width="95" height="54" loading="lazy">
-        <p>תעודת זהות חכמה לכלבים ולחתולים. משלוחים לכל הארץ.</p>
-      </div>
-      <div><h4>חנות</h4><ul><li><a href="#">כל הדמויות</a></li><li><a href="#">Bluedragon</a></li><li><a href="#">Bubblyduck</a></li><li><a href="#">Captaincheese</a></li><li><a href="#">Cheekypanda</a></li><li><a href="#">Honeybear</a></li></ul></div>
-      <div><h4>מידע</h4><ul><li><a href="#how">איך זה עובד</a></li><li><a href="#faq">שאלות נפוצות</a></li><li><a href="#story">הסיפור שלנו</a></li><li><a href="#">כניסה לפרופיל</a></li><li><a href="#">משלוחים והחזרות</a></li></ul></div>
-      <div><h4>דברו איתנו</h4><ul><li><a href="#">וואטסאפ</a></li><li><a href="#">אינסטגרם</a></li><li><a href="#">פייסבוק</a></li><li><a href="#">טיקטוק</a></li></ul></div>
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="./" title="Chapiz, לעמוד הבית"><img src="assets/img/chapiz-logo.svg" alt="Chapiz" title="Chapiz" width="77" height="44" loading="lazy"></a>
+      <p>תג חכם לכלב ולחתול: מי שמוצא אותו מצמיד טלפון, ורואה איך להשיג אתכם.</p>
+      <a class="foot-wa" href="#" data-wa="footer" title="כתבו לנו בוואטסאפ"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>כתבו לנו בוואטסאפ</a>
     </div>
-    <div class="bottom">
-      <div>© 2026 Chapiz · <a href="#">תקנון</a> · <a href="#">מדיניות פרטיות</a> · <a href="#">הצהרת נגישות</a></div>
-      <a class="credit" href="https://incentive-media.co.il/" target="_blank" rel="noopener">נבנה על ידי <img src="assets/img/im-logo-reverse.svg" alt="Incentive Media" title="Incentive Media" width="96" height="14"></a>
-    </div>
+    <nav class="foot-col" aria-label="הדמויות">
+      <h2>הדמויות</h2>
+      <ul>
+        <li><a href="#" title="Bubblyduck"><bdi>Bubblyduck</bdi></a></li>
+        <li><a href="#" title="Bluedragon"><bdi>Bluedragon</bdi></a></li>
+        <li><a href="#" title="Captaincheese"><bdi>Captaincheese</bdi></a></li>
+        <li><a href="#" title="Cheekypanda"><bdi>Cheekypanda</bdi></a></li>
+        <li><a href="#" title="Honeybear"><bdi>Honeybear</bdi></a></li>
+      </ul>
+    </nav>
+    <nav class="foot-col" aria-label="מידע">
+      <h2>מידע</h2>
+      <ul>
+        <li><a href="#" data-page="/איך-זה-עובד/" title="איך זה עובד">איך זה עובד</a></li>
+        <li><a href="#" data-page="/פרטיות/" title="פרטיות">פרטיות</a></li>
+        <li><a href="#" data-page="/שאלות-נפוצות/" title="שאלות נפוצות">שאלות נפוצות</a></li>
+        <li><a href="#" data-page="/הסיפור-שלנו/" title="הסיפור שלנו">הסיפור שלנו</a></li>
+      </ul>
+    </nav>
+    <nav class="foot-col" aria-label="שירות">
+      <h2>שירות</h2>
+      <ul>
+        <li><a href="#" data-page="/צור-קשר/" title="צור קשר">צור קשר</a></li>
+        <li><a href="#" data-page="/משלוחים-והחזרות/" title="משלוחים והחזרות">משלוחים והחזרות</a></li>
+        <li><a href="#" data-page="/תקנון/" title="תקנון">תקנון</a></li>
+        <li><a href="#" data-page="/מדיניות-פרטיות/" title="מדיניות פרטיות">מדיניות פרטיות</a></li>
+        <li><a href="#" data-page="/הצהרת-נגישות/" title="הצהרת נגישות">הצהרת נגישות</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>© 2026 צ'אפיז. כל הזכויות שמורות</p>
+    <a class="im-credit" href="https://incentive-media.co.il/" title="Incentive Media, בניית אתרים">נבנה על ידי <img src="assets/img/im-logo-reverse.svg" alt="Incentive Media" title="Incentive Media" width="110" height="22" loading="lazy"></a>
   </div>
 </footer>
 
-<a class="wa-float" href="#" aria-label="כתבו לנו בוואטסאפ" title="וואטסאפ"><svg class="icon" style="color:#fff;width:30px;height:30px"><use href="#i-wa"/></svg></a>
-<div class="sticky-bar">
-  <a class="cz-btn cz-btn--primary" href="#models">לבחירת תג · 99 ₪</a>
-  <a class="wa" href="#" aria-label="כתבו לנו בוואטסאפ"><svg class="icon" style="color:#fff;width:28px;height:28px"><use href="#i-wa"/></svg></a>
+<div class="mbar" id="mbar" aria-hidden="true">
+  <a class="btn" href="#models" title="לבחירת תג" tabindex="-1">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+  <a class="mbar-wa" href="#" data-wa="bar" aria-label="כתבו לנו בוואטסאפ" title="כתבו לנו בוואטסאפ" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg></a>
 </div>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="תפריט">
+    <button class="icon-btn drawer-close" type="button" aria-label="סגירת התפריט" title="סגירה"><svg class="icon"><use href="#i-close"/></svg></button>
+    <nav class="drawer-nav" aria-label="ניווט בנייד">
+      <a href="#models" title="הדמויות">הדמויות</a>
+      <a href="#how" title="איך זה עובד">איך זה עובד</a>
+      <a href="#privacy" title="פרטיות">פרטיות</a>
+      <a href="#faq" title="שאלות נפוצות">שאלות</a>
+      <a href="#story" title="הסיפור שלנו">הסיפור שלנו</a>
+    </nav>
+    <a class="btn" href="#models" title="לבחירת תג">לבחירת תג <span class="arr" aria-hidden="true">←</span></a>
+  </div>
+</div>
+
+<dialog class="vid-dialog" id="how-dialog" aria-label="ככה זה עובד, בסרטון של חצי דקה">
+  <button class="icon-btn vid-close" type="button" aria-label="סגירת הסרטון" title="סגירה"><svg class="icon"><use href="#i-close"/></svg></button>
+  <video controls playsinline preload="none" width="720" height="1280" poster="assets/img/how-it-works-poster.jpg" data-src="assets/video/how-it-works.mp4"></video>
+</dialog>
+
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var v = document.getElementById('film'), t = document.getElementById('film-toggle');
+
+  // Reduced motion: poster only, the file is never downloaded.
+  var wide = root.dataset.hero === 'cover' && matchMedia('(min-width: 900px)').matches;
+  if (wide) v.poster = v.dataset.posterWide;
+  if (!root.classList.contains('no-motion') && v) {
+    v.src = wide ? v.dataset.srcWide : v.dataset.src;
+    v.preload = 'auto';
+    var p = v.play();
+    if (p && p.catch) p.catch(function () { setPaused(true); });
+  }
+
+  function setPaused(paused) { markPaused(t, paused); }
+  t.addEventListener('click', function () {
+    if (v.paused) { v.play(); setPaused(false); } else { v.pause(); setPaused(true); }
+  });
+
+  function markPaused(btn, paused) {
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    var label = paused ? 'הפעלת הסרטון' : 'עצירת הסרטון';
+    btn.setAttribute('aria-label', label); btn.title = label;
+  }
+
+  // ---- Block films: load near the viewport, play only while visible ----
+  var noMotion = root.classList.contains('no-motion');
+  var films = [].slice.call(document.querySelectorAll('.lazy-film'));
+  films.forEach(function (f) {
+    var btn = f.parentNode.querySelector('.film-toggle');
+    f._userPaused = false;
+    if (btn) btn.addEventListener('click', function () {
+      if (f.paused) { f._userPaused = false; f.play(); markPaused(btn, false); }
+      else { f._userPaused = true; f.pause(); markPaused(btn, true); }
+    });
+  });
+  if (!noMotion && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var f = e.target;
+        if (e.isIntersecting) {
+          if (!f.src) { f.src = f.dataset.src; f.preload = 'auto'; }
+          if (!f._userPaused) { var p = f.play(); if (p && p.catch) p.catch(function () {}); }
+        } else if (f.src) { f.pause(); }
+      });
+    }, { rootMargin: '200px 0px' });
+    films.forEach(function (f) { io.observe(f); });
+  }
+
+  // ---- 3. The moment: desktop = scroll swaps the sticky media,
+  //      phone = JS slider (finger swipe, mouse drag, arrows, dots).
+  //      Not native scroll-snap: RTL snapping is unreliable in WebKit. ----
+  var steps = document.getElementById('steps');
+  if (steps) {
+    var items = [].slice.call(steps.querySelectorAll('.step'));
+    var nav = document.getElementById('steps-nav');
+    var dots = [].slice.call(nav.querySelectorAll('.steps-dots button'));
+    var arrows = [].slice.call(nav.querySelectorAll('.nav-btn'));
+    var wide = matchMedia('(min-width: 900px)');
+    var cur = 0, n = items.length;
+    function activate(i) {
+      cur = i;
+      items.forEach(function (it, k) { it.querySelector('.step-media').classList.toggle('is-on', k === i); });
+      dots.forEach(function (d, k) { if (k === i) d.setAttribute('aria-current', 'step'); else d.removeAttribute('aria-current'); });
+      arrows[0].disabled = i === 0; arrows[1].disabled = i === n - 1;
+    }
+    function go(i) {
+      i = Math.max(0, Math.min(n - 1, i));
+      steps.style.setProperty('--i', i);
+      activate(i);
+    }
+    arrows.forEach(function (b) { b.addEventListener('click', function () { go(cur + (+b.dataset.dir)); }); });
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { go(k); }); });
+
+    // Desktop: the step text in the middle of the screen picks the media.
+    if ('IntersectionObserver' in window) {
+      var sio = new IntersectionObserver(function (entries) {
+        if (!wide.matches) return;
+        entries.forEach(function (e) { if (e.isIntersecting) activate(+e.target.parentNode.dataset.step); });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      items.forEach(function (it) { sio.observe(it.querySelector('.step-text')); });
+    }
+
+    // Phone: drag. In RTL the next step waits on the left, so dragging right moves forward.
+    var x0 = null, y0 = 0, dx = 0, lock = null, moved = false;
+    steps.addEventListener('pointerdown', function (e) {
+      if (wide.matches || (e.pointerType === 'mouse' && e.button !== 0)) return;
+      x0 = e.clientX; y0 = e.clientY; dx = 0; lock = null; moved = false;
+    });
+    steps.addEventListener('pointermove', function (e) {
+      if (x0 === null) return;
+      var mx = e.clientX - x0, my = e.clientY - y0;
+      if (lock === null && (Math.abs(mx) > 8 || Math.abs(my) > 8)) {
+        lock = Math.abs(mx) > Math.abs(my);
+        if (lock) { steps.classList.add('dragging'); try { steps.setPointerCapture(e.pointerId); } catch (err) {} }
+        else { x0 = null; return; }
+      }
+      if (!lock) return;
+      moved = true;
+      dx = mx;
+      if ((cur === 0 && dx < 0) || (cur === n - 1 && dx > 0)) dx /= 3;
+      steps.style.setProperty('--drag', dx + 'px');
+    });
+    function release() {
+      if (x0 === null) return;
+      steps.classList.remove('dragging');
+      steps.style.setProperty('--drag', '0px');
+      if (lock && Math.abs(dx) > 48) go(cur + (dx > 0 ? 1 : -1));
+      x0 = null;
+    }
+    steps.addEventListener('pointerup', release);
+    steps.addEventListener('pointercancel', release);
+    // only our own capture ending counts (the child that held implicit touch capture also fires this)
+    steps.addEventListener('lostpointercapture', function (e) { if (e.target === steps) release(); });
+    // a drag must not also count as a click on the pause button
+    steps.addEventListener('click', function (e) { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+    wide.addEventListener ? wide.addEventListener('change', function () { go(wide.matches ? 0 : cur); }) : 0;
+  }
+
+  // ---- 4. Character picker (radiogroup, arrow keys follow RTL) ----
+  var group = document.querySelector('.picker');
+  if (group) {
+    var btns = [].slice.call(group.querySelectorAll('.pick-btn'));
+    var img = document.getElementById('pick-img'), art = document.getElementById('pick-art');
+    var cap = document.getElementById('pick-cap'), nm = document.getElementById('pick-name');
+    var line = document.getElementById('pick-line'), cta = document.getElementById('pick-cta');
+    var ctaName = document.getElementById('pick-cta-name');
+    function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+    function choose(b, focus) {
+      btns.forEach(function (x) { var on = x === b; x.setAttribute('aria-checked', on); x.tabIndex = on ? 0 : -1; });
+      if (focus) b.focus();
+      var d = b.dataset, n = esc(d.name);
+      nm.innerHTML = '<bdi>' + n + '</bdi>'; line.textContent = d.line;
+      ctaName.textContent = d.name; cta.title = 'להזמנת ' + d.name; cta.href = d.url;
+      if (d.photo) {
+        art.hidden = true; img.hidden = false;
+        img.classList.add('swap');
+        setTimeout(function () {
+          img.src = d.photo; img.alt = d.alt; img.title = d.name + ' על ' + d.dog;
+          img.style.setProperty('--pos', d.pos);
+          img.classList.remove('swap');
+        }, noMotion ? 0 : 160);
+        cap.innerHTML = '<span><b>' + esc(d.dog) + '</b>, ' + esc(d.desc) + '. התג שלו: <bdi>' + n + '</bdi></span>';
+      } else {
+        img.hidden = true; art.hidden = false; art.src = d.art; art.alt = 'תג ' + d.name; art.title = d.name;
+        cap.innerHTML = '<span>ככה נראה <bdi>' + n + '</bdi> מקרוב</span>';
+      }
+    }
+    btns.forEach(function (b, i) {
+      b.addEventListener('click', function () { choose(b); });
+      b.addEventListener('keydown', function (e) {
+        var k = { ArrowLeft: 1, ArrowDown: 1, ArrowRight: -1, ArrowUp: -1 }[e.key];
+        if (!k) return;
+        e.preventDefault();
+        choose(btns[(i + k + btns.length) % btns.length], true);
+      });
+    });
+  }
+
+
+  // ---- Mobile menu (burger on the right) ----
+  var drawer = document.getElementById('drawer'), burger = document.querySelector('.burger');
+  function openMenu(byKey) {
+    drawer.hidden = false; document.body.classList.add('menu-open');
+    burger.setAttribute('aria-expanded', 'true');
+    if (byKey) drawer.querySelector('.drawer-close').focus();
+  }
+  function closeMenu() {
+    drawer.hidden = true; document.body.classList.remove('menu-open');
+    burger.setAttribute('aria-expanded', 'false');
+  }
+  if (drawer && burger) {
+    burger.setAttribute('aria-expanded', 'false'); burger.setAttribute('aria-controls', 'drawer');
+    burger.addEventListener('click', function (e) { openMenu(e.detail === 0); });
+    drawer.addEventListener('click', function (e) {
+      if (e.target === drawer || e.target.closest('.drawer-close') || e.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !drawer.hidden) closeMenu(); });
+  }
+
+  // ---- "How it works" video in a dialog (file loads only on open) ----
+  var dlg = document.getElementById('how-dialog'), how = document.querySelector('.how');
+  if (dlg && how && dlg.showModal) {
+    var dv = dlg.querySelector('video');
+    how.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!dv.src) dv.src = dv.dataset.src;
+      dlg.showModal(); var p = dv.play(); if (p && p.catch) p.catch(function () {});
+    });
+    dlg.querySelector('.vid-close').addEventListener('click', function () { dlg.close(); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('close', function () { dv.pause(); });
+  }
+
+  // ---- Phone: sticky bar after the hero, out of the way at the footer ----
+  var bar = document.getElementById('mbar'), heroEl = document.getElementById('hero'), foot = document.querySelector('.site-foot');
+  if (bar && 'IntersectionObserver' in window) {
+    var heroOut = false, footIn = false;
+    function sync() {
+      var on = heroOut && !footIn;
+      bar.classList.toggle('on', on); bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+      [].forEach.call(bar.querySelectorAll('a'), function (a) { a.tabIndex = on ? 0 : -1; });
+    }
+    new IntersectionObserver(function (es) { heroOut = !es[0].isIntersecting; sync(); }, { rootMargin: '-60% 0px 0px 0px' }).observe(heroEl);
+    new IntersectionObserver(function (es) { footIn = es[0].isIntersecting; sync(); }).observe(foot);
+  }
+
+  // WhatsApp number is still open with Amir: every data-wa link points here once it's set.
+  var WA = '';
+  if (WA) [].forEach.call(document.querySelectorAll('[data-wa], .head-actions .wa'), function (a) { a.href = 'https://wa.me/' + WA; a.target = '_blank'; a.rel = 'noopener'; });
+})();
+</script>
 </body>
 </html>
